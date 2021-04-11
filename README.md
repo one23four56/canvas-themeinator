@@ -1,4 +1,4 @@
-# canvas-dark-theme
+# canvas-themeinator
 A chrome extension that gives canvas a dark theme.  
 I was bored over the weekend so I made this. I am probably not going to update it, so if you want something feel free to add it yourself.
 
