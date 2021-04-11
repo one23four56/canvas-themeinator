@@ -6,7 +6,7 @@ I was bored over the weekend so I made this. I am probably not going to update i
 
 ## How to install: 
 
-Unfortunately, it costs five dollars to put extensions on the Chrome Web Store, and I do not have five dollars currently available. Because of this, you will have to download this extension the manual way, instructions for which are below. 
+This extension will be on the Chrome Web Store once it passes review, but until then you will have to install it the manual way, instructions for which are below:
 
 1. Click on the latest release (under releases to the right)
 2. Under assets, click 'Source Code (zip)'
