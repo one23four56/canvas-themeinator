@@ -3,17 +3,19 @@
     "name" : "Canvas Dark Mode",
     "version" : "1",
     "description" : "Makes Canvas dark",
-    "background" : {
-        "service_worker" : "background.js"
-    },
     "content_scripts": [
         {
             "matches" : ["https://*.instructure.com/*"],
-            "css" : ["style.css"]
+            "css" : ["style.css"],
+            "js" : ["content.js"]
         }
     ],
+    "permissions" : [
+        "storage"
+    ],
     "action" : {
-      "default_title" : "Open Canvas"  
+      "default_title" : "Choose Theme",
+      "default_popup" : "html/index.html"
     },
     "icons" : {
         "32" : "icon.png"
