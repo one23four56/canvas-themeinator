@@ -17,12 +17,16 @@ svg {
 .ic-app-header__logomark {
     display: none !important;
 }
+
 .Grouping-styles__title::after {
     display: none !important;
 }
 
+.Grouping-styles__title {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .Grouping-styles__overlay {
     border-style: solid !important;
-    margin: 1px !important;
     box-shadow: -1px 1px 11px 1px white !important;
 }
