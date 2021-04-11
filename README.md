@@ -1,6 +1,7 @@
 # canvas-dark-theme
 A chrome extension that gives canvas a dark theme.  
-I was bored over the weekend so I made this. ~~I am probably not going to update it, so if you want something feel free to add it yourself.~~ I am working on adding a few more themes to choose from. You can still add something yourself if you want it.
+I was bored over the weekend so I made this. I am probably not going to update it, so if you want something feel free to add it yourself.
+
 
 ## How to install: 
 
@@ -15,12 +16,26 @@ Unfortunately, it costs 1 dollar to put extensions on the Chrome Web Store, and 
 
 ## Screenshots: (classes are censored)
 
-Off: 
+Dark Theme:  
+
+![Screenshot 2021-04-11 120825](https://user-images.githubusercontent.com/72141247/114314119-fdf3a900-9abe-11eb-90c0-8ac2228c390e.png)
+
+AMOLED Dark Theme:  
+
+![Screenshot 2021-04-11 121216](https://user-images.githubusercontent.com/72141247/114314236-7f4b3b80-9abf-11eb-90c8-30c28d328086.png)
+
+Purple Theme:
+
+![Screenshot 2021-04-11 121529](https://user-images.githubusercontent.com/72141247/114314350-d94c0100-9abf-11eb-8313-a4ce75e14e56.png)
+
+Blue Theme: 
+
+![Screenshot 2021-04-11 121802](https://user-images.githubusercontent.com/72141247/114314451-4c557780-9ac0-11eb-9b3a-c1309cb6c9e0.png)
+
+Green Theme:
+
+![Screenshot 2021-04-11 122118](https://user-images.githubusercontent.com/72141247/114314525-b0783b80-9ac0-11eb-8089-6e182bc90b5d.png)
+
+Off:  
 
 ![image](https://user-images.githubusercontent.com/72141247/114288894-de19a200-9a38-11eb-9308-3f3ba9715b25.png)
-
-On: 
-
-![Screenshot 2021-04-10 200209](https://user-images.githubusercontent.com/72141247/114288913-086b5f80-9a39-11eb-9dd8-076f1e69c8f7.png)
-
-
