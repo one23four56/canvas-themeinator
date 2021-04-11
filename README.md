@@ -10,7 +10,7 @@ Unfortunately, it costs five dollars to put extensions on the Chrome Web Store, 
 
 1. Click on the latest release (under releases to the right)
 2. Under assets, click 'Source Code (zip)'
-3. When the file is done downloading, open it and extact it
+3. When the file is done downloading, open it and extract it
 4. Open Chrome
 5. Click the three dots > More Tools > Extensions
 6. Turn Developer Mode on and click 'Load unpacked'
