@@ -1,8 +1,8 @@
 {
     "manifest_version" : 3,
-    "name" : "Canvas Dark Mode",
+    "name" : "Canvas Themeinator",
     "version" : "1",
-    "description" : "Makes Canvas dark",
+    "description" : "Gives Canvas more themes",
     "content_scripts": [
         {
             "matches" : ["https://*.instructure.com/*"],
