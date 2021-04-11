@@ -6,6 +6,9 @@
     border-radius: 15px !important;
 }
 
+a {
+    border-style: none !important;
+}
 
 svg {
     fill: white !important;
