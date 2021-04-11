@@ -1,0 +1,25 @@
+* {
+    background-color: rgb(46, 46, 46) !important;
+    color: white !important;    
+    border-color: white !important;
+    background-image: none !important;
+    border-radius: 15px !important;
+}
+
+
+svg {
+    fill: white !important;
+}
+
+.ic-app-header__logomark {
+    display: none !important;
+}
+.Grouping-styles__title::after {
+    display: none !important;
+}
+
+.Grouping-styles__overlay {
+    border-style: solid !important;
+    margin: 1px !important;
+    box-shadow: -1px 1px 11px 1px white;
+}

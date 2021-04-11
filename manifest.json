@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 3,
+    "name" : "Canvas Dark Mode",
+    "version" : "1",
+    "description" : "Makes Canvas dark",
+    "background" : {
+        "service_worker" : "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches" : ["https://*.instructure.com/*"],
+            "css" : ["style.css"]
+        }
+    ],
+    "action" : {
+      "default_title" : "Open Canvas"  
+    },
+    "icons" : {
+        "32" : "icon.png"
+    }
+}
