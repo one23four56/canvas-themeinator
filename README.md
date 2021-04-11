@@ -8,12 +8,16 @@ I was bored over the weekend so I made this. I am probably not going to update i
 
 Unfortunately, it costs five dollars to put extensions on the Chrome Web Store, and I do not have five dollars currently available. Because of this, you will have to download this extension the manual way, instructions for which are below. 
 
-1. Clone this repository
-2. Open Chrome
-3. Click the three dots > More Tools > Extensions
-4. Turn Developer Mode on and click 'Load unpacked'
-5. Select the cloned repositoy and click 'Select Folder'
-6. Done!
+1. Click on the latest release (under releases to the right)
+2. Under assets, click 'Source Code (zip)'
+3. When the file is done downloading, open it and extact it
+4. Open Chrome
+5. Click the three dots > More Tools > Extensions
+6. Turn Developer Mode on and click 'Load unpacked'
+7. Find the extracted folder, and select the folder that contains manifest.json
+8. Pin the extension to the extension bar in Chrome, and then click it
+9. Choose the theme you like the most (you can change it later)
+10. Done!
 
 ## Screenshots: (classes are censored)
 
