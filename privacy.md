@@ -1,4 +1,3 @@
 # Privacy Policy
 
-This extension only stores one piece of user data: the current theme you have picked. This data is stored locally and is not attached to your Google Account in any way. 
-No other user data is collected beyond this. 
+This extension collects no data from its users; however, it does store user settings. This is because it would be very annoying to have to re-input your setting every time you open a new tab. These settings are stored locally and are not in any way connected to your Google account. 

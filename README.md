@@ -1,6 +1,6 @@
 # canvas-themeinator
 A chrome extension that gives canvas more themes.  
-I was bored over the weekend so I made this. I am probably not going to update it, so if you want something feel free to add it yourself.
+I was bored over the weekend so I made this. It is not a full time thing, so do not expect a lot of updates.
 
 [Screenshots](https://github.com/one23four56/canvas-dark-theme#screenshots-classes-are-censored)
 
