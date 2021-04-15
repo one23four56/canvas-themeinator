@@ -5,8 +5,17 @@
     <title>Document</title>
     <style>
         body {width: 250px;}
-        button {width: 100%;}
+        button {width: 100%;color:white;border:none;padding: 3px;}
+        button:hover {box-shadow: inset 0px 0px 0px 1px white;}
         h1 {font-family: sans-serif;}
+        #dark {background-color: rgb(46, 46, 46);}
+        #amoled {background-color: black;}
+        #purple {background-color: rgb(103, 7, 192);}
+        #darkpurple {background-color: rgb(59, 0, 114);}
+        #blue {background-color: rgb(62, 91, 255);}
+        #darkblue {background-color: rgb(0, 19, 124);}
+        #green {background-color: rgb(0, 197, 105);}
+        #orange {background-color: rgb(236, 143, 22);}
     </style>
 </head>
 <body>
@@ -20,12 +29,14 @@
     <button id="green">Green</button>
     <button id="orange">Orange</button>
     <hr>
+    <p>Current Theme: <b id="theme">Dark</b></p>
+    <hr>
     <input type="checkbox" name="rounded" id="rounded">
     <label for="rounded">Use Rounded UI</label>
     <hr>
     <p>Reload the page for changes to appear</p>
     <hr>
-    <p>v1.4 | <a href="https://github.com/one23four56/canvas-themeinator" target="_blank">View on GitHub</a> | <a href="https://github.com/one23four56/canvas-themeinator/releases/" target="_blank">Update Log</a></p>
+    <p>v1.5 | <a href="https://github.com/one23four56/canvas-themeinator" target="_blank">View on GitHub</a> | <a href="https://github.com/one23four56/canvas-themeinator/releases/" target="_blank">Update Log</a></p>
 <script src="script.js"></script>
 </body>
 </html>
