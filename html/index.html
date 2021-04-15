@@ -17,6 +17,9 @@
         #green {background-color: rgb(0, 197, 105);}
         #orange {background-color: rgb(236, 143, 22);}
         #light {background-color: white;color: black;}
+        #light:hover, #custom:hover {box-shadow: inset 0px 0px 0px 1px black;}
+        #custom {color:white;text-shadow: -1px 1px 2px #000,1px 1px 2px #000,1px -1px 0 #000,-1px -1px 0 #000;;background: linear-gradient(to top right, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, purple 100%);}
+        #custom-form {display: none;}
     </style>
 </head>
 <body>
@@ -30,6 +33,17 @@
     <button id="darkblue">Dark Blue</button> 
     <button id="green">Green</button>
     <button id="orange">Orange</button>
+    <hr>
+    <button id="custom">Custom (BETA)</button>
+        <form id="custom-form">
+            <label for="bc-input">Main Color: </label>
+            <input type="color" name="bc-input" id="bc-input" required value="#000000"> <br>
+            <label for="tc-input">Text Color: </label>
+            <input type="color" name="tc-input" id="tc-input" required value="#ffffff"> <br>
+            <label for="name-input">Name: </label>
+            <input type="text" name="name-input" id="name-input" maxlength="15" minlength="1" value="Custom Theme"> <br>
+            <input type="submit" value="Save">
+        </form>
     <hr>
     <p>Current Theme: <b id="theme">Dark</b></p>
     <hr>

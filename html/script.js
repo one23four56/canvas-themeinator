@@ -2,6 +2,7 @@
 function createSetThemeListener(elemid, name, color, textcolor) {
     let elem = document.getElementById(elemid)
     elem.addEventListener('click', () => {
+        document.getElementById("custom-form").style.display = 'none'
         chrome.storage.local.set({ 'canvas_theme' : JSON.stringify({
             name: name,
             backgroundcolor: color,
@@ -23,6 +24,32 @@ function createSetThemeListener(elemid, name, color, textcolor) {
     createSetThemeListener('darkpurple', 'Dark Purple', 'rgb(59, 0, 114)', 'white')
     createSetThemeListener('darkblue', 'Dark Blue', 'rgb(0, 19, 124)', 'white')
     createSetThemeListener('light', 'Light', 'white', 'black')
+
+    document.getElementById("custom-form").style.display = 'none'
+    document.getElementById('custom').addEventListener('click', ()=>{
+        if (document.getElementById("custom-form").style.display !== 'none') {
+            document.getElementById("custom-form").style.display = 'none'
+        } else {
+            document.getElementById("custom-form").style.display = 'initial'
+        }
+    })
+
+    document.getElementById("custom-form").addEventListener('submit', event=>{
+        event.preventDefault()
+        let formData = new FormData(document.getElementById("custom-form"))
+        let name = formData.get("name-input")
+        let textcolor = formData.get("tc-input")
+        let color = formData.get("bc-input")
+        document.getElementById("custom-form").style.display = 'none'
+        chrome.storage.local.set({ 'canvas_theme' : JSON.stringify({
+            name: name,
+            backgroundcolor: color,
+            textcolor: textcolor
+        })})
+        document.getElementById('theme').innerText = name
+        document.getElementById('theme').style.color = textcolor
+        document.getElementById('theme').style.backgroundColor = color
+    })
 }
 
 {
