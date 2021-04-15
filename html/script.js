@@ -1,23 +1,28 @@
 
-function createSetThemeListener(elemid, name, color) {
+function createSetThemeListener(elemid, name, color, textcolor) {
     let elem = document.getElementById(elemid)
     elem.addEventListener('click', () => {
-        chrome.storage.local.set({ 'canvasthemebgc': color })
-        chrome.storage.local.set({ 'canvastheme': name })
+        chrome.storage.local.set({ 'canvas_theme' : JSON.stringify({
+            name: name,
+            backgroundcolor: color,
+            textcolor: textcolor
+        })})
         document.getElementById('theme').innerText = name
-        document.getElementById('theme').style.color = color
+        document.getElementById('theme').style.color = textcolor
+        document.getElementById('theme').style.backgroundColor = color
     })
 }
 
 {
-    createSetThemeListener('dark', 'Dark', 'rgb(46, 46, 46)')
-    createSetThemeListener('amoled', 'AMOLED Dark', 'rgb(0, 0, 0)')
-    createSetThemeListener('purple', 'Purple', 'rgb(103, 7, 192)')
-    createSetThemeListener('blue', 'Blue', 'rgb(62, 91, 255)')
-    createSetThemeListener('green', 'Green', 'rgb(0, 197, 105)')
-    createSetThemeListener('orange', 'Orange', 'rgb(236, 143, 22)')
-    createSetThemeListener('darkpurple', 'Dark Purple', 'rgb(59, 0, 114)')
-    createSetThemeListener('darkblue', 'Dark Blue', 'rgb(0, 19, 124)')
+    createSetThemeListener('dark', 'Dark', 'rgb(46, 46, 46)', 'white')
+    createSetThemeListener('amoled', 'AMOLED Dark', 'rgb(0, 0, 0)', 'white')
+    createSetThemeListener('purple', 'Purple', 'rgb(103, 7, 192)', 'white')
+    createSetThemeListener('blue', 'Blue', 'rgb(62, 91, 255)', 'white')
+    createSetThemeListener('green', 'Green', 'rgb(0, 197, 105)', 'white')
+    createSetThemeListener('orange', 'Orange', 'rgb(236, 143, 22)', 'white')
+    createSetThemeListener('darkpurple', 'Dark Purple', 'rgb(59, 0, 114)', 'white')
+    createSetThemeListener('darkblue', 'Dark Blue', 'rgb(0, 19, 124)', 'white')
+    createSetThemeListener('light', 'Light', 'white', 'black')
 }
 
 {
@@ -27,13 +32,17 @@ function createSetThemeListener(elemid, name, color) {
 }
 
 {
-    chrome.storage.local.get(['canvastheme'], result => {
-        document.getElementById('theme').innerText = "Dark"
-        if (result.canvastheme) document.getElementById('theme').innerText = result.canvastheme
-    })
-    chrome.storage.local.get(['canvasthemebgc'], result => {
-        document.getElementById('theme').style.color = "rgb(46, 46, 46)"
-        if (result.canvasthemebgc) document.getElementById('theme').style.color = result.canvasthemebgc
+    chrome.storage.local.get(['canvas_theme'], result=>{
+        let theme = JSON.parse(result.canvas_theme)
+        if (theme) {
+            document.getElementById('theme').innerText = theme.name
+            document.getElementById('theme').style.color = theme.textcolor
+            document.getElementById('theme').style.backgroundColor = theme.backgroundcolor
+        } else {
+            document.getElementById('theme').innerText = "Dark"
+            document.getElementById('theme').style.color = "white"
+            document.getElementById('theme').style.backgroundColor = "rgb(46, 46, 46)"
+        }
     })
     chrome.storage.local.get(['canvasborderradius'], result => {
         if (result.canvasborderradius == '15px') document.getElementById("rounded").checked = true

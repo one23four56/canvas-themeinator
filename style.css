@@ -1,12 +1,13 @@
 :root {
     --canvas-style-bgc: rgb(46, 46, 46);
     --canvas-border-radius: 15px;
+    --canvas-style-tc: white;
 }
 
 :not(.Grouping-styles__overlay, .ic-DashboardCard__header_hero, .ic-DashboardCard__header_image) {
     background-color: var(--canvas-style-bgc) !important;
-    color: white !important;    
-    border-color: white !important;
+    color: var(--canvas-style-tc) !important;    
+    border-color: var(--canvas-style-tc) !important;
     background-image: none !important;
     border-radius: var(--canvas-border-radius) !important;
 }
@@ -16,7 +17,7 @@ a {
 }
 
 svg {
-    fill: white !important;
+    fill: var(--canvas-style-tc) !important;
 }
 
 .ic-app-header__logomark {
@@ -51,7 +52,7 @@ svg {
 
 ol.Grouping-styles__items {
     margin-left: 15px !important;
-    border: 2px solid white !important;
+    border: 2px solid var(--canvas-style-tc) !important;
     box-shadow: 0px 2px 10px 0px white !important;
 }
 
