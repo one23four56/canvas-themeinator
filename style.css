@@ -2,12 +2,14 @@
     --canvas-style-bgc: rgb(46, 46, 46);
     --canvas-border-radius: 15px;
     --canvas-style-tc: white;
+    --cavnas-style-bc: white;
+    --canvas-box-shadow: 0px 2px 10px 0px white;
 }
 
 :not(.Grouping-styles__overlay, .ic-DashboardCard__header_hero, .ic-DashboardCard__header_image) {
     background-color: var(--canvas-style-bgc) !important;
     color: var(--canvas-style-tc) !important;    
-    border-color: var(--canvas-style-tc) !important;
+    border-color: var(--canvas-style-bc) !important;
     background-image: none !important;
     border-radius: var(--canvas-border-radius) !important;
 }
@@ -38,7 +40,7 @@ svg {
 
 .Grouping-styles__overlay {
     border-style: solid !important;
-    box-shadow: -1px 1px 11px 1px white !important;
+    box-shadow: var(--canvas-box-shadow) !important;
     border-radius: var(--canvas-border-radius) !important;
 }
 
@@ -52,8 +54,8 @@ svg {
 
 ol.Grouping-styles__items {
     margin-left: 15px !important;
-    border: 2px solid var(--canvas-style-tc) !important;
-    box-shadow: 0px 2px 10px 0px white !important;
+    border: 2px solid var(--canvas-style-bc) !important;
+    box-shadow: var(--canvas-box-shadow) !important;
 }
 
 .NotificationBadge-styles__activityIndicator.NotificationBadge-styles__hasBadge {

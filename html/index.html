@@ -40,6 +40,8 @@
             <input type="color" name="bc-input" id="bc-input" required value="#000000"> <br>
             <label for="tc-input">Text Color: </label>
             <input type="color" name="tc-input" id="tc-input" required value="#ffffff"> <br>
+            <label for="boc-input">Border Color: </label>
+            <input type="color" name="boc-input" id="boc-input" required value="#ffffff"> <br>
             <label for="name-input">Name: </label>
             <input type="text" name="name-input" id="name-input" maxlength="15" minlength="1" value="Custom Theme"> <br>
             <input type="submit" value="Save">
@@ -48,7 +50,9 @@
     <p>Current Theme: <b id="theme">Dark</b></p>
     <hr>
     <input type="checkbox" name="rounded" id="rounded">
-    <label for="rounded">Use Rounded UI</label>
+    <label for="rounded">Use Rounded UI</label> <br>
+    <input type="checkbox" name="boxshadow" id="boxshadow">
+    <label for="boxshadow">Show Box Shadow</label>
     <hr>
     <p>Reload the page for changes to appear</p>
     <hr>
