@@ -25,6 +25,7 @@ function createSetThemeListener(elemid, name, color, textcolor, bordercolor) {
     createSetThemeListener('darkpurple', 'Dark Purple', 'rgb(59, 0, 114)', 'white', 'white')
     createSetThemeListener('darkblue', 'Dark Blue', 'rgb(0, 19, 124)', 'white', 'white')
     createSetThemeListener('light', 'Light', 'white', 'black', 'black')
+    createSetThemeListener('aqua', 'Aqua', 'rgb(209, 255, 242)', 'black', 'black')
 
     document.getElementById("custom-form").style.display = 'none'
     document.getElementById('custom').addEventListener('click', ()=>{

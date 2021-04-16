@@ -61,3 +61,7 @@ ol.Grouping-styles__items {
 .NotificationBadge-styles__activityIndicator.NotificationBadge-styles__hasBadge {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+
+a.Button {
+    border-style: solid !important;
+}

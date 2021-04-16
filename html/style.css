@@ -1,0 +1,95 @@
+body {
+    width: 350px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    height: 42.5px;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+}
+
+img[src="../logo-white.png"] {
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+#offset {
+    height: 30px;
+}
+
+button {
+    width: 49%;
+    margin: 0;
+    display: inline-block;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 0px 1px white;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+#dark {
+    background-color: rgb(46, 46, 46);
+}
+
+#amoled {
+    background-color: black;
+}
+
+#purple {
+    background-color: rgb(103, 7, 192);
+}
+
+#darkpurple {
+    background-color: rgb(59, 0, 114);
+}
+
+#blue {
+    background-color: rgb(62, 91, 255);
+}
+
+#darkblue {
+    background-color: rgb(0, 19, 124);
+}
+
+#green {
+    background-color: rgb(0, 197, 105);
+}
+
+#orange {
+    background-color: rgb(236, 143, 22);
+}
+
+#light {
+    background-color: white;
+    color: black;
+}
+
+#aqua {
+    background-color: rgb(209, 255, 242);
+    color: black;
+}
+
+#light:hover, #custom:hover, #aqua:hover {
+    box-shadow: inset 0px 0px 0px 1px black;
+}
+
+#custom {
+    width: 100%;
+    color: white;
+    text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    background: linear-gradient(to top right, red 0%, orange 20%, yellow 40%, green 60%, blue 80%, purple 100%);
+}
+
+#custom-form {
+    display: none;
+}
